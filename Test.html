@@ -98,6 +98,7 @@ function countdown() {
  var i = document.getElementById('counter');
  i.innerHTML = parseInt(i.innerHTML)-1;
 if (parseInt(i.innerHTML)<=0) {
+	window.location.reload()
 Swal.fire({
   icon: 'error',
   title: 'Oops...',
@@ -105,10 +106,8 @@ Swal.fire({
   footer: '<a href="https://aisbirkun.netlify.app/">Beli premium untuk menggunakan tools tanpa batas</a>'
 })
 }
-if (parseInt(i.innerHTML)<=-5) {
-window.close();
 }
-}
+
 setInterval(function(){ countdown(); },1000);
 
 </script>
