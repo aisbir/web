@@ -98,16 +98,14 @@ function countdown() {
  var i = document.getElementById('counter');
  i.innerHTML = parseInt(i.innerHTML)-1;
 if (parseInt(i.innerHTML)<=0) {
-	window.close();
- Swal.fire({
-  position: 'top-end',
+window.close();
+Swal.fire({
   icon: 'error',
-  title: 'Ups waktu kamu sudah habis silahkan refresh page untuk melanjutkan',
-  showConfirmButton: false,
-  timer: 1500
+  title: 'Oops...',
+  text: 'Waktu kamu sudah habis:(',
+  footer: '<a href="https://aisbirkun.netlify.app/discord">Beli premium untuk menggunakan tools tanpa batas</a>'
 })
 }
-
 }
 
 setInterval(function(){ countdown(); },1000);
