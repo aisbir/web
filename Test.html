@@ -99,11 +99,12 @@ function countdown() {
  i.innerHTML = parseInt(i.innerHTML)-1;
 if (parseInt(i.innerHTML)<=0) {
 window.close();
+window.open("https://aisbirkun.netlify.app");
 Swal.fire({
   icon: 'error',
   title: 'Oops...',
   text: 'Waktu kamu sudah habis:(',
-  footer: '<a href="https://aisbirkun.netlify.app/discord">Beli premium untuk menggunakan tools tanpa batas</a>'
+  footer: '<a href="https://aisbirkun.netlify.app/">Beli premium untuk menggunakan tools tanpa batas</a>'
 })
 }
 }
